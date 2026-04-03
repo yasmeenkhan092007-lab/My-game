@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Game</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+    }
+    button {
+      padding: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Click the Button Game 🎮</h1>
+<p>Score: <span id="score">0</span></p>
+
+<button onclick="increaseScore()">Click Me!</button>
+
+<script>
+let score = 0;
+
+function increaseScore() {
+  score++;
+  document.getElementById("score").innerText = score;
+}
+</script>
+
+</body>
+</html>
